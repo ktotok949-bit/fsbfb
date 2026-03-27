@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Be+Vietnam+Pro', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, .font-headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#91f78e",
+              "tertiary-container": "#f9fbb7",
+              "primary": "#006f1d",
+              "surface-container-highest": "#dfe3e4",
+              "background": "#f9f9f9",
+              "on-primary-container": "#005e17",
+              "on-background": "#2f3334",
+              "on-primary": "#eaffe2",
+              "on-surface-variant": "#5b6061",
+              "primary-fixed-dim": "#83e881",
+              "surface-variant": "#dfe3e4",
+              "tertiary": "#60622d",
+              "tertiary-fixed-dim": "#eaecaa",
+              "surface-dim": "#d7dbdb",
+              "tertiary-dim": "#535623",
+              "surface-container": "#eceeee",
+              "inverse-on-surface": "#9c9d9d",
+              "error": "#a73b21",
+              "primary-container": "#91f78e",
+              "on-tertiary-fixed-variant": "#686b35",
+              "on-tertiary-container": "#5e602c",
+              "on-secondary-fixed": "#4e3b34",
+              "on-error": "#fff7f6",
+              "surface-tint": "#006f1d",
+              "inverse-surface": "#0c0f0f",
+              "on-primary-fixed-variant": "#00691a",
+              "on-secondary-container": "#624d45",
+              "primary-fixed": "#91f78e",
+              "on-primary-fixed": "#00480f",
+              "on-surface": "#2f3334",
+              "on-tertiary": "#fbfdb9",
+              "on-error-container": "#6e1400",
+              "surface-container-low": "#f2f4f4",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#705a52",
+              "surface-bright": "#f9f9f9",
+              "surface-container-high": "#e6e9e9",
+              "on-secondary-fixed-variant": "#6c574f",
+              "secondary-fixed": "#fadcd2",
+              "on-tertiary-fixed": "#4c4e1b",
+              "on-secondary": "#fff7f5",
+              "secondary-container": "#fadcd2",
+              "secondary-fixed-dim": "#ebcec4",
+              "secondary-dim": "#634e47",
+              "outline": "#777b7c",
+              "primary-dim": "#006118",
+              "error-container": "#fd795a",
+              "outline-variant": "#afb3b3",
+              "error-dim": "#791903",
+              "tertiary-fixed": "#f9fbb7",
+              "surface": "#f9f9f9"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Be Vietnam Pro"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 h-20 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-green-800 dark:text-green-400 font-headline">
+                EcoMovement
+            </div>
+<div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] text-sm font-medium tracking-tight">
+<a class="text-stone-600 dark:text-stone-400 hover:text-green-600 transition-colors" href="#">About Us</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-green-600 transition-colors" href="#">Recycling Schedule</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-green-600 transition-colors" href="#">Sorting Rules</a>
+<a class="text-stone-600 dark:text-stone-400 hover:text-green-600 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm hover:scale-95 duration-200 ease-in-out">
+                Join Club
+            </button>
+</div>
+<div class="h-px w-full bg-gradient-to-r from-transparent via-stone-200/50 to-transparent"></div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative px-8 py-24 md:py-32 overflow-hidden">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-tertiary-container text-on-tertiary-container rounded-full">
+                        New Semester Initiative
+                    </span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-on-background leading-[1.1] tracking-tight mb-6">
+                        Cultivating a <span class="text-primary italic">Greener</span> Legacy.
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg mb-10 leading-relaxed">
+                        Join your fellow students in the Eco-Movement. From paper recycling to battery disposal, we’re turning our school into a living archive of sustainability.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:shadow-xl transition-all scale-100 active:scale-95">
+                            Join Club
+                        </button>
+<button class="bg-surface-container-low text-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-high transition-all">
+                            View Rules
+                        </button>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square rounded-[4rem] rounded-br-[1.5rem] overflow-hidden rotate-2 hover:rotate-0 transition-transform duration-700 bg-surface-container-high">
+<img alt="Student hands holding a young plant sapling" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-500" data-alt="Close-up of diverse student hands gently holding a small green plant sapling with soil in bright natural daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrv8RF-DA-cYelmDa-qC91cYF-_01rAis_xT6fHX2R0jTvRh8Fi9zWlZMZ4y4bJp-n6kTWrgoVx9dSYPoDY23pZTKBPBNJ5DRoF0CO6YvR7-7gwhISKa68sXYgEJv3f_XXoQJuhDslsixtpQ2t0-u1nfjcpJxr0RBQrElWX192n4Er7ilqm0Qcxp7GKHLmzjRC1C1GeRmumRrY5-oKHbRpPs_lGNIQGXraKRKuf7krY4mp_GWIaCWm8RgQrQNJVQihMyAFoiLr7KKK"/>
+</div>
+<div class="absolute -bottom-6 -left-6 p-6 bg-surface-container-lowest rounded-xl shadow-2xl max-w-[200px]">
+<p class="text-primary font-headline font-bold text-3xl mb-1">84%</p>
+<p class="text-xs text-on-surface-variant font-medium">Recycling goal reached this term</p>
+<div class="w-full h-1.5 bg-tertiary-fixed rounded-full mt-3">
+<div class="w-[84%] h-full bg-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Background Element -->
+<div class="absolute top-0 right-0 -z-10 w-1/3 h-full bg-gradient-to-l from-primary-container/20 to-transparent blur-3xl"></div>
+</section>
+<!-- Bento Grid: Schedule & Sorting Rules -->
+<section class="px-8 py-20 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<h2 class="text-3xl md:text-4xl font-bold font-headline mb-4">The Recycling Archive</h2>
+<p class="text-on-surface-variant">Our curated approach to waste management. Follow the schedule and rules to help us maintain a circular campus ecosystem.</p>
+</div>
+<div class="flex gap-2">
+<span class="material-symbols-outlined text-primary p-2 bg-primary-container rounded-full">calendar_today</span>
+<span class="material-symbols-outlined text-secondary p-2 bg-secondary-container rounded-full">eco</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Schedule Card -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-2xl font-bold font-headline mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">schedule</span>
+                                Collection Schedule
+                            </h3>
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div>
+<p class="font-bold">Paper &amp; Cardboard</p>
+<p class="text-sm text-on-surface-variant">Main Hall Entrance</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-primary">Every Tuesday</p>
+<p class="text-xs text-on-surface-variant">08:00 AM - 10:00 AM</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-error">
+<span class="material-symbols-outlined">battery_charging_full</span>
+</div>
+<div>
+<p class="font-bold">Used Batteries</p>
+<p class="text-sm text-on-surface-variant">Science Lab Hub</p>
+</div>
+</div>
+<div class="text-right">
+<p class="font-bold text-primary">First Monday</p>
+<p class="text-xs text-on-surface-variant">Monthly Collection</p>
+</div>
+</div>
+</div>
+</div>
+<p class="mt-8 text-sm text-on-surface-variant italic">Please ensure all materials are dry and clean before drop-off.</p>
+</div>
+<!-- Small Impact Card -->
+<div class="bg-primary p-8 rounded-xl text-on-primary flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-6xl mb-4" data-weight="fill" style="font-variation-settings: 'FILL' 1;">recycling</span>
+<h3 class="text-3xl font-bold font-headline mb-2">1,240kg</h3>
+<p class="opacity-80">Total paper saved by students this semester.</p>
+<button class="mt-8 px-6 py-2 bg-on-primary text-primary rounded-full font-bold text-sm">View Leaderboard</button>
+</div>
+<!-- Sorting Rules Grid -->
+<div class="md:col-span-3 grid md:grid-cols-4 gap-6">
+<!-- Rule 1 -->
+<div class="bg-surface-container-high p-6 rounded-xl group hover:bg-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl mb-4">delete_sweep</span>
+<h4 class="font-bold mb-2 group-hover:text-on-primary">Paper</h4>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/80">Flatten boxes, remove plastic tape and staples.</p>
+</div>
+<!-- Rule 2 -->
+<div class="bg-surface-container-high p-6 rounded-xl group hover:bg-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl mb-4">local_drink</span>
+<h4 class="font-bold mb-2 group-hover:text-on-primary">Plastic</h4>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/80">Rinse thoroughly. PET and HDPE plastics only.</p>
+</div>
+<!-- Rule 3 -->
+<div class="bg-surface-container-high p-6 rounded-xl group hover:bg-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl mb-4">battery_alert</span>
+<h4 class="font-bold mb-2 group-hover:text-on-primary">Batteries</h4>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/80">Tape terminals for safety. No leaking units.</p>
+</div>
+<!-- Rule 4 -->
+<div class="bg-surface-container-high p-6 rounded-xl group hover:bg-primary transition-all duration-300">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl mb-4">restaurant_menu</span>
+<h4 class="font-bold mb-2 group-hover:text-on-primary">Compost</h4>
+<p class="text-sm text-on-surface-variant group-hover:text-on-primary/80">Fruit peels and organic waste. No dairy or meat.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Join Section -->
+<section class="px-8 py-20 bg-surface-container-low">
+<div class="max-w-7xl mx-auto rounded-3xl bg-surface-container-lowest p-12 overflow-hidden relative">
+<div class="grid md:grid-cols-2 items-center gap-12">
+<div class="relative z-10">
+<h2 class="text-4xl font-bold font-headline mb-6">Stay Rooted in the Movement.</h2>
+<p class="text-on-surface-variant mb-8 text-lg">Receive weekly sorting tips, schedule reminders, and eco-challenges directly in your school inbox.</p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-grow bg-surface-container-high border-none rounded-full px-6 py-4 focus:ring-2 focus:ring-primary/20 transition-all outline-none" placeholder="school.email@edu.com" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold">Subscribe</button>
+</form>
+</div>
+<div class="relative h-64 md:h-full min-h-[300px]">
+<img alt="Student desk with recycled journals and a small succulent" class="absolute inset-0 w-full h-full object-cover rounded-2xl" data-alt="Organized student workspace featuring recycled paper journals, wooden pencils, and a vibrant green succulent plant in soft window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0XRY_oyoTtCeXhG40dCLorNeHb6pmBUI0dZBXizT55uUXxOLwNJrIIzTvgkABgYWRG4s7CSvrG32fqj0g4lXGsnif27R9c0y2OIdH8-ZdS9ZwtmL2Rb4P6MWaXn-4k0u9cx3086e3twpQ1zJyOS7LgsTt1yJEluFCfdJYHderR55sJDDNjh6rKbkyA74cQoW02VLSDbERv3lrILr3Gs7rtZ3hYJBRq5SBb7g5QegKxoxKuDLhwp1ElsApfD-qINN94xUz_HopoHuQ"/>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-tertiary-container/30 blur-3xl -mr-32 -mt-32 rounded-full"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-stone-200/50 dark:border-stone-800/50 bg-stone-100 dark:bg-stone-950">
+<div class="flex flex-col md:flex-row justify-between items-start px-8 max-w-7xl mx-auto gap-12">
+<div class="max-w-xs">
+<div class="text-lg font-bold text-green-700 dark:text-green-400 font-headline mb-4">
+                    EcoMovement
+                </div>
+<p class="text-sm font-body text-stone-600 dark:text-stone-400 leading-relaxed">
+                    A student-led initiative dedicated to sustainable waste management and environmental education within our school community.
+                </p>
+<div class="flex gap-4 mt-6">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">camera</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-12">
+<div>
+<h5 class="font-headline font-bold text-sm mb-4 uppercase tracking-widest text-on-surface">Resources</h5>
+<ul class="space-y-3 text-sm text-stone-500">
+<li><a class="hover:text-green-600 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="hover:text-green-600 transition-colors" href="#">Terms of Service</a></li>
+<li><a class="hover:text-green-600 transition-colors" href="#">Volunteer Portal</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-sm mb-4 uppercase tracking-widest text-on-surface">Contact</h5>
+<ul class="space-y-3 text-sm text-stone-500">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">mail</span> eco@school.edu</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">location_on</span> Building C, Room 102</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-stone-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-['Be_Vietnam_Pro'] text-sm text-stone-600 dark:text-stone-400">
+                © 2024 School Eco-Movement. Cultivating a Greener Future.
+            </p>
+<div class="flex gap-6 text-sm">
+<span class="flex items-center gap-1 text-green-700"><span class="material-symbols-outlined text-xs">park</span> Zero Waste Campus</span>
+</div>
+</div>
+</footer>
+</body></html>
